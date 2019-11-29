@@ -19,11 +19,43 @@
 }
 
 .card--cta {
-  padding: 2em 1em;
+  padding: 2rem 1rem;
   position: relative;
-  top: 5em;
+  top: 5rem;
   z-index: 2;
   & h2 {
-    font-size: 1.1em;
+    font-size: 1.1rem;
   }
+}
+
+@media only screen and (min-width: 900px) {
+  .card {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    & img {
+      width: 50%;
+    }
+  }
+
+  .card__text {
+    flex-basis: 50%;
+    margin-left: 5rem;
+    margin-top: 0;
+  }
+
+  .card--cta {
+    display: block;
+    padding: 2rem 6rem;
+    margin: 3rem auto;
+    width: max-content;
+    text-align: center;
+  }
+}
+
+// Order helper
+.neg-order {
+  order: -1;
+  margin-left: 0;
+  margin-right: 5rem;
 }

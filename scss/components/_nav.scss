@@ -1,12 +1,13 @@
 .nav {
   position: fixed;
   top: 0;
-  padding: 2em 1em 1em;
+  padding: 2rem 1rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: none;
   width: 100%;
+  z-index: 1000;
 }
 
 .nav__logo {
@@ -16,5 +17,17 @@
   }
   &:hover {
     filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.35));
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .nav {
+    padding: 2rem 15% 1rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .nav {
+    padding: 2rem 3rem 1rem;
   }
 }
