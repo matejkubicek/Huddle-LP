@@ -1,0 +1,16 @@
+.nav {
+  position: fixed;
+  top: 0;
+  padding: 2em 1em;
+  display: flex;
+  justify-content: space-between;
+  background: none;
+  width: 100%;
+}
+
+.nav__logo {
+  width: 120px;
+  &:hover {
+    filter: drop-shadow(0 4px 6px $clr-gray-blue);
+  }
+}
