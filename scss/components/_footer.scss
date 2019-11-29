@@ -1,20 +1,79 @@
 .footer {
   background-color: $clr-dark-cyan;
   position: relative;
-  top: -4rem;
-  z-index: -1;
+  margin-top: -4rem;
+  padding: 8rem 1rem 1rem 1rem;
 }
 
+.footer__logo {
+  margin-bottom: 3rem;
+  display: inline-block;
+  & img {
+    width: 10rem;
+    filter: brightness(0) invert(1);
+  }
+}
 
+.footer__section-info {
+  padding: 1rem 0;
+  & a {
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #fff;
+    & address {
+      margin-left: 33px;
+    }
+  }
+}
 
+.footer__info-icon {
+  float: left;
+  margin: 3px 20px 0 0;
+}
 
+.footer__section-links {
+  padding: 1rem 0;
+  & li {
+    margin-bottom: 0.5rem;
+  }
+  & a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
 
+.footer__section-social {
+  text-align: center;
+  padding: 1rem 0;
+  & a {
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0.3rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
 
+.footer__section-copyright {
+  color: #fff;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.develop-footer {
+  background-color: $clr-pink;
+  padding: 1rem 0;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #fff;
 }

@@ -4,6 +4,9 @@
   background-color: $clr-pale-cyan;
   background-image: url(.././images/bg-hero-mobile.svg);
   background-size: cover;
+  & img {
+    width: 100%;
+  }
 }
 
 .site-header__section {
