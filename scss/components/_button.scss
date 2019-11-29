@@ -8,6 +8,10 @@
   margin: 2rem 0;
   font-weight: 700;
   font-size: 0.8rem;
+  &:hover {
+    background-color: darken($clr-pink, 10%);
+    box-shadow: 0 2px 8px $clr-pink;
+  }
 }
 
 .button--card {
@@ -21,4 +25,9 @@
   font-size: 0.7rem;
   padding: 0.3rem 2rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  &:hover {
+    background-color: darken($clr-pink, 10%);
+    color: #fff;
+    box-shadow: 0 2px 8px $clr-pink;
+  }
 }

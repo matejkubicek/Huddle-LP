@@ -11,18 +11,27 @@
   & img {
     width: 10rem;
     filter: brightness(0) invert(1);
+    &:hover {
+      filter: brightness(0) invert(1) drop-shadow(0 0 6px #fff);
+    }
   }
 }
 
 .footer__section-info {
   padding: 1rem 0;
   & a {
-    display: block;
+    display: inline-block;
     margin-bottom: 1rem;
     text-decoration: none;
     color: #fff;
     & address {
-      margin-left: 33px;
+      margin-left: 40px;
+    }
+  }
+  & a:hover {
+    color: $clr-pink;
+    & img {
+      filter: drop-shadow(0 0 6px #fff);
     }
   }
 }
@@ -40,6 +49,9 @@
   & a {
     color: #fff;
     text-decoration: none;
+    &:hover {
+      color: $clr-pink;
+    }
   }
 }
 
@@ -55,6 +67,9 @@
     & svg {
       width: 100%;
       height: 100%;
+    }
+    &:hover {
+      filter: drop-shadow(0 0 6px #fff);
     }
   }
 }
@@ -76,4 +91,8 @@
 
 .attribution a {
   color: #fff;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
