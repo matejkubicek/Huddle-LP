@@ -1,0 +1,24 @@
+.card {
+  text-align: center;
+  margin: 3rem 0;
+  padding: 3rem;
+  box-shadow: 0 0 8px #e7e7e7;
+  border-radius: 1rem;
+}
+
+.card__text {
+  margin-top: 3rem;
+  & p {
+    color: $clr-gray-blue;
+    font-size: 0.8em;
+  }
+}
+
+.card--cta {
+  padding: 2em 1em;
+  position: relative;
+  top: 5em;
+  & h2 {
+    font-size: 1.1em;
+  }
+}
